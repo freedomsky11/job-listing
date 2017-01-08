@@ -40,7 +40,7 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
     @job.delete
 
-    redirect_to jobs_path, alert: "Job Dleted"
+    redirect_to jobs_path, alert: "Job Deleted"
   end
 
   private
