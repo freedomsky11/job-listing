@@ -40,14 +40,14 @@ class Admin::JobsController < ApplicationController
   def destroy
     @job = Job.find(params[:id])
 
-    @job.delete(job_params)
+    @job.destroy
     redirect_to admin_jobs_path, alert: "Job Deleted"
   end
 
   private
 
   def job_params
-    params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email)
+    params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)
   end
 
 end
