@@ -6,6 +6,7 @@ class Admin::JobsController < ApplicationController
 
   def index
     @jobs = Job.all
+    @resumes = Resume.all
   end
 
   def new
@@ -14,6 +15,7 @@ class Admin::JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
+    @resumes = Resume.where(job: @job) 
   end
 
   def edit

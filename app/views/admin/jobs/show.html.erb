@@ -6,4 +6,25 @@
   </div>
   <h2><%= @job.title %></h2>
   <p><%= @job.description %></p>
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th> 应聘者 </th>
+        <th> 简历 </th>
+        <th> 附件 </th>
+      </tr>
+
+      <tbody>
+        <% @resumes.each do |resume| %>
+        <tr>
+          <td> <%= resume.user.email %> </td>
+          <td> <%= resume.content %> </td>
+          <td> <%= link_to "下载附件",resume.attachment_url %> </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </thead>
+
+  </table>
 </div>
