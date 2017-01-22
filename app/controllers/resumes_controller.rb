@@ -24,6 +24,11 @@ class ResumesController < ApplicationController
   end
 
   def destroy
+    @job = Job.find(params[:job_id])
+    @resume = Resume.find(params[:id])
+    @resume.destroy
+
+    redirect_to admin_job_path(@job),alert: "Resume Deleted"
   end
 
   private

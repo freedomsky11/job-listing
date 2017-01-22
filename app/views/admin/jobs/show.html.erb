@@ -20,7 +20,8 @@
         <tr>
           <td> <%= resume.user.email %> </td>
           <td> <%= resume.content %> </td>
-          <td> <%= link_to "下载附件",resume.attachment_url %> </td>
+          <td> <%= link_to("下载附件",resume.attachment_url) %> </td>
+          <td> <%= link_to('Delete', job_resume_path(@job, resume), method: :delete, data: { confirm: "Are you sure?" }) %> </td>
         </tr>
         <% end %>
       </tbody>
