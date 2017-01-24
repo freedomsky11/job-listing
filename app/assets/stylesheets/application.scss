@@ -138,37 +138,33 @@ html {
 }
 
 body {
+  height: auto;
   min-height:100%;
   position:relative;
-  padding-bottom: 150px;
+  padding-bottom: 162px;
+}
+
+footer a.fa {
+  width: 2.4rem ;
+  padding: 0.5em ;
+  font-size: 1rem ;
+  border-radius: 100%;
+  border: 2px solid;
+}
+
+footer a {
+  &:hover,
+  &:focus {
+    color: #A5D6A7;
+  }
 }
 
 footer {
   position: absolute;
   bottom: 0px;
   width:100%;
-  height:150px;
+  height:162px;
   background-color: #e0e0e0;
 }
 
 /* text */
-
-
-.soc-media-ul {
-  display: flex;
-  justify-content: center;
-}
-
-.soc-media-ul a {
-  display: block;
-  padding: 0.5em .65rem;
-  font-size: 1rem;
-  color: #fff;
-  border-radius: 50%;
-  border: 2px solid;
-
-  &:hover,
-  &:focus {
-    color: red;
-  }
-}
