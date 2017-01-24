@@ -19,11 +19,18 @@
  @import "bootstrap";
  @import "font-awesome";
 
+
  .jumbotron {
    background-image:url('http://www.sportsplanetmag.com/sportsplanet/Upload/20160509170651993850.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 260px;
+ }
+
+ .container-fluid .jumbotron {
+   padding-bottom: 260px;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   border-radius: 0;//圆角为0
  }
 
  .title {
@@ -75,6 +82,8 @@
   transition: 0.5s;
 }
 
+/* navbar */
+
 .navbar-default {
   background-color: #212121;//背景颜色
   border-color: #212121;//边框色
@@ -122,8 +131,44 @@
     color: #212121;
 }
 
-.container-fluid .jumbotron{
-  padding-bottom: 260px;//内部的底部边距，这样按钮不会很靠近底部了
-  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
-  border-radius: 0;//圆角为0
+/* footer */
+
+html {
+  height:100%;
+}
+
+body {
+  min-height:100%;
+  position:relative;
+  padding-bottom: 150px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  height:150px;
+  background-color: #e0e0e0;
+}
+
+/* text */
+
+
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media-ul a {
+  display: block;
+  padding: 0.5em .65rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
 }
