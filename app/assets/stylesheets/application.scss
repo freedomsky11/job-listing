@@ -38,14 +38,22 @@
    text-align: left;
    margin-top: 30px;
    margin-bottom: 50px;
+   -webkit-animation-duration: 1.5s;
+   -webkit-animation-delay: 0s;
+   span {
+     -webkit-animation-delay: 1.6s;
+   }
  }
 
  .slogan {
    margin-top: 10px;
    margin-bottom: 50px;
+   font-weight:bold;
    text-align: left;
    color: white;
    top: 12px;
+   -webkit-animation-duration: 1.5s;
+   -webkit-animation-delay: 2s;
  }
 
  .lead {
@@ -53,6 +61,14 @@
    margin-left: 60px;
    text-align: left;
    color: white;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 4s;
+ }
+
+ .lead a {
+   -webkit-animation-duration: 5s;
+   -webkit-animation-delay: 5.5s;
+   -webkit-animation-iteration-count: infinite;
  }
 
  .caption {

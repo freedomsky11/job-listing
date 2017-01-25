@@ -16,3 +16,25 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require_tree .
+
+
+$(function() {
+    $('.demo').click(function(e){
+        var button = $(this);
+        button.addClass(button.data('animation') + ' animated');
+        setTimeout(function(){
+            button.removeClass(button.data('animation') + ' animated');
+        },1000);
+    })
+});
+
+// Rob this works too. check out the right even, like mouse over
+$(function() {
+    $('.demo').hover(function(e){
+        var button = $(this);
+        button.addClass(button.data('animation') + ' animated');
+        setTimeout(function(){
+            button.removeClass(button.data('animation') + ' animated');
+        },1000);
+    })
+});
