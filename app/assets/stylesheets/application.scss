@@ -97,7 +97,11 @@
   box-shadow: 3px 3px 0px transparent;
   transition: 0.5s;
 }
+/* flashes */
 
+#flashes {
+  margin-bottom: 0;
+}
 /* navbar */
 
 .navbar-default {
@@ -228,6 +232,7 @@ transition: 0.5s;
       padding-bottom: 20px;
       background-color: #fff;
       box-shadow: none;
+      border: 0;
       letter-spacing: 0;
       min-height: 680px;
   }
