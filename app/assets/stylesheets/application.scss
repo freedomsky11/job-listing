@@ -21,7 +21,8 @@
 
 
  .jumbotron {
-   background-image:url('http://www.sportsplanetmag.com/sportsplanet/Upload/20160509170651993850.jpg');
+  //  background-image:url('http://www.sportsplanetmag.com/sportsplanet/Upload/20160509170651993850.jpg');
+   background: linear-gradient(rgba(255,255,255,0.15), rgba(255,255,255,0.15)),url(http://www.sportsplanetmag.com/sportsplanet/Upload/20160509170651993850.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 260px;
