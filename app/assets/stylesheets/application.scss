@@ -183,7 +183,7 @@ footer {
   background-color: #e0e0e0;
 }
 
-/* login-register */
+/* login-signin */
 
 @media (min-width: 992px) {
   .container {
@@ -200,6 +200,17 @@ footer {
   }
 }
 
+.common-block {
+    display: block;
+    max-width: 960px;
+    margin: 40px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.25);
+    letter-spacing: 0;
+}
+
 @media (max-width: 991px) {
   .common-block {
       display: block;
@@ -212,17 +223,6 @@ footer {
       letter-spacing: 0;
       min-height: 680px;
   }
-}
-
-.common-block {
-    display: block;
-    max-width: 960px;
-    margin: 40px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.25);
-    letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
@@ -378,3 +378,19 @@ hr {
 a:active, a:hover, a:link, a:visited {
     text-decoration: none;
 }
+
+.registration-block .input #forget-password {
+    position: relative;
+    display: block;
+    margin-top: -34px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: right;
+    font-weight: 100;
+}
+
+.registration-block .input #blue {
+    color: #666;
+    font-weight: 400;
+}
+/* text */
