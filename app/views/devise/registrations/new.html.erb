@@ -1,0 +1,86 @@
+<!-- <h2>Sign up</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+    <%= f.input :password_confirmation, required: true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %> -->
+
+<div class="container common-block">
+  <div class="row">
+    <div class="registration-block">
+<div class="col-sm-6 hidden-xs">
+<div class="introduce">
+<div class="row">
+<div class="icon">
+  <img src='https://fullstack.xinshengdaxue.com/images/registration-1.png'>
+</div>
+<div class="text">
+  <h2>用科学的方法轻松学编程</h2>
+  <p>
+    学编程和玩游戏一样开心
+  </p>
+</div>
+</div>
+<div class="row">
+<div class="icon">
+  <img src='https://fullstack.xinshengdaxue.com/images/registration-2.png'>
+</div>
+<div class="text">
+  <h2>职业程序员即时在线答疑</h2>
+  <p>
+    遇见Bug不再束手无策
+  </p>
+</div>
+</div>
+<div class="row">
+<div class="icon">
+  <img src='https://fullstack.xinshengdaxue.com/images/registration-3.png'>
+</div>
+<div class="text">
+  <h2>十年从业经验 大牛倾心分享</h2>
+  <p>
+    在成长的道路上，拉你一把
+  </p>
+</div>
+</div>
+</div>
+</div>
+<!-- 这是一根竖线 -->
+<!-- <div class="col-sm-2 col-offset-5">
+
+  <div id="Layer1" style="position:absolute; width:1px; height:335px; z-index:1; background-color: rgb(151, 151, 151);layer-background-color: #666666; border: 1px none rgb(151, 151, 151); "></div>
+</div> -->
+<div class="right">
+<div class="col-xs-12 col-sm-6 input">
+  <h1>注册</h1>
+<form novalidate="novalidate" class="simple_form new_user" id="new_user" action="/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5srhjORxNL7QZUvo6xGUQllcxkn039NYRNbEOl5O0OirFpWL5jzZyuNCtAr45TiBzkAvyKoSxTFh5jcJ3SMc2A==" />
+<div class="form-group email required user_email"><input class="form-control string email required" autofocus="autofocus" required="required" aria-required="true" placeholder="电子邮箱" type="email" name="user[email]" id="user_email" /></div>
+<div class="form-group password required user_password"><input class="form-control password required" required="required" aria-required="true" placeholder="密码，至少6位英文数字组合" type="password" name="user[password]" id="user_password" /></div>
+<div class="form-group password required user_password_confirmation"><input class="form-control password required" required="required" aria-required="true" placeholder="确认密码" type="password" name="user[password_confirmation]" id="user_password_confirmation" /></div>
+<!-- 验证码 -->
+<input type="submit" name="commit" value="注 册" class="btn btn-default registration-btn" />
+</form><hr>
+<div class="tip">
+已有账号？去<span id="link"><a id="link" href="/sign_in">登录</a></span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+        </div>
+      </div>
+    </div>
