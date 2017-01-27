@@ -67,8 +67,8 @@
  }
 
  .lead a {
-   -webkit-animation-duration: 5s;
-   -webkit-animation-delay: 5.5s;
+   -webkit-animation-duration: 10s;
+   -webkit-animation-delay: 5.7s;
    -webkit-animation-iteration-count: infinite;
  }
 
@@ -407,4 +407,97 @@ a:active, a:hover, a:link, a:visited {
     color: #666;
     font-weight: 400;
 }
-/* text */
+
+// section-title
+section {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.section-title {
+  text-align: center;
+  font-size: 25px;
+  line-height: 20px;
+  color: #979797;
+  // padding-bottom: 20px;
+  // letter-spacing: 3px;
+}
+
+// hot-jobs-category
+.hjc-ul {
+  padding: 0 20px 0;
+  margin: 50px auto 0;
+  text-align: center;
+  overflow: hidden;
+  height: 260px;
+  width: 1024px;
+  li {
+    display: inline-block;
+    width: 220px;
+    height: 260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+    .hjc-img-wrap {
+      width: 220px;
+      height: 220px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &:hover {
+        // transform: scale(1.2);
+        // // -webkit-transform: scale(1.2);
+        // // -webkit-transition: all .8s;
+        // transition: all .8s;
+      }
+    }
+    .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      // background: rgba(51,122,183,0.9);
+      font-size: 16px;
+      padding: 6px 25px;
+      // color: #fff;
+      transition: opacity .4s ease-in-out;
+    }
+  }
+  // .more {
+  //   .title {
+  //     height: 150px;
+  //     line-height: 130px;
+  //     font-size: 20px;
+  //   }
+  // }
+}
+
+.section-content .title {
+  padding: 20px 0 10px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+section.industry {
+    background: #F2F2F5;
+}
+
+.short-line {
+    display: block;
+    background: #337ab7;
+    border-style: none;
+    border-radius: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 53;
+    width: 50px;
+    height: 3px;
+    position: relative;
+}
