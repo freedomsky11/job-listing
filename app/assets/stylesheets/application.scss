@@ -428,23 +428,25 @@ section {
   margin: 50px auto 0;
   text-align: center;
   overflow: hidden;
-  height: 260px;
+  height: 160px;
   width: 1024px;
   li {
     display: inline-block;
     width: 220px;
-    height: 260px;
+    height: 160px;
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
     margin-bottom: 50px;
     overflow: hidden;
     .hjc-img-wrap {
-      width: 220px;
-      height: 220px;
+      width: 120px;
+      height: 120px;
+      margin-left: 50px;
+      margin-right: 50px;
       img {
-        width: 220px;
-        height: 220px;
+        width: 120px;
+        height: 120px;
       }
       &:hover {
         // transform: scale(1.2);
