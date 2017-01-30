@@ -61,6 +61,9 @@ class JobsController < ApplicationController
       search_result = Job.published.ransack(@search_criteria).result(:distinct => true)
       @jobs = search_result.paginate(:page => params[:page], :per_page => 10 )
     end
+    #  if @jobs.blank?
+    #     flash[:alert] = "没有对应的纪录！"
+    #   end
   end
 
   protected

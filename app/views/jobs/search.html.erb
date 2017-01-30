@@ -32,6 +32,11 @@
 
 <div class="col-md-12">
   <br>
+  <% if @jobs.blank? %>
+    <br>
+    <h2 class="search-info-title">搜索信息不能为空，请输入关键字搜索</h2>
+  <% else %>
+  <br>
             <div class="dropdown clearfix pull-right">
               <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 排序
@@ -70,4 +75,5 @@
   <div class="text-center">
     <%= will_paginate(@jobs, renderer: BootstrapPagination::Rails) %>
   </div>
+  <% end %>
 </div>
