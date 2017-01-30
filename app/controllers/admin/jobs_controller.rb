@@ -5,7 +5,7 @@ class Admin::JobsController < ApplicationController
   layout "admin"
 
   def index
-    @jobs = Job.all
+    @jobs = Job.all.paginate(:page => params[:page], :per_page => 10 )
     @resumes = Resume.all
   end
 
@@ -15,7 +15,7 @@ class Admin::JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
-    @resumes = Resume.where(job: @job) 
+    @resumes = Resume.where(job: @job)
   end
 
   def edit
