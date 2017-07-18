@@ -34,6 +34,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'will_paginate'
+gem 'font-awesome-less'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
