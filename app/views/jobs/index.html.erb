@@ -1,12 +1,31 @@
 <div class="col-md-12">
   <div class="group">
-    <%= link_to("Add a job", new_job_path, class: "btn btn-default pull-right") %>
+    <%#= link_to("Add a job", new_job_path, class: "btn btn-default pull-right") %>
+    <li class="dropdown btn btn-default pull-right">
+      <span class="dropdown-toggle" data-toggle="dropdown">
+        排序
+        <b class="caret"></b>
+      </span>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+        <li><%= link_to("按照薪资下限排序", jobs_path(:order => "by_lower_bound")) %></li>
+        <li><%= link_to("按照薪资上限排序", jobs_path(:order => "by_upper_bound")) %></li>
+        <li><%= link_to("按照发表时间排序", jobs_path(:order => "created_at")) %></li>
+      </ul>
+    </li>
   </div>
 
   <br>
   <br>
 
   <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>职缺</th>
+        <th>薪资下限</th>
+        <th>薪资上限</th>
+        <th>刊登时间</th>
+      </tr>
+    </thead>
     <tbody>
       <%= render :partial => "job_item", :collection => @jobs, :as => :job %>
     </tbody>
