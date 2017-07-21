@@ -1,3 +1,7 @@
+<h3> 投交履历到 <%= @job.title %> </h3>
+
+<hr>
+
 <% if !@resume.errors.empty? %>
   <div class="alert alert-error">
     <ul>
@@ -9,9 +13,9 @@
 <% end %>
 
 <div class="well">
-  <%= form_for [@job, @resume], html: { multipart: true } do |f| %>
-    <%= f.label :attachment %>
-    <%= f.file_field :attachment %>
-    <%= f.submit "Save", class: "btn btn-primary" %>
+  <%= simple_form_for [@job, @resume] do |f| %>
+    <%= f.input :content %>
+    <%= f.input :attachment %>
+    <%= f.submit "送出" %>
   <% end %>
 </div>

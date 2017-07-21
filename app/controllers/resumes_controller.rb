@@ -1,23 +1,23 @@
 class ResumesController < ApplicationController
 
-  before_filter :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_filter :authenticate_user!
 
   def index
     @resumes = Resume.where(:job => params[:job_id])
   end
 
   def new
-    @resume = Resume.new
     @job = Job.find(params[:job_id])
+    @resume = Resume.new
   end
 
   def create
-    @resume = Resume.new(resume_params)
     @job = Job.find(params[:job_id])
+    @resume = Resume.new(resume_params)
     @resume.job = @job
     @resume.user = current_user
     if @resume.save
-      redirect_to job_path(@job), notice: "Upload success."
+      redirect_to job_path(@job), notice: "成功提交履历"
     else
       render :new
     end
@@ -26,6 +26,6 @@ class ResumesController < ApplicationController
   private
 
   def resume_params
-    params.require(:resume).permit(:job_id, :user_id, :attachment)
+    params.require(:resume).permit(:content, :attachment)
   end
 end
