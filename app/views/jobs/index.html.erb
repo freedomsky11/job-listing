@@ -1,11 +1,16 @@
 <div class="col-md-12">
-  <div class="group">
-    <%#= link_to("Add a job", new_job_path, class: "btn btn-default pull-right") %>
-    <li class="dropdown btn btn-default pull-right">
+  <div class="dropdown clearfix pull-right">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      排序
+        <span class="caret"></span>
+    </button>
+      <%#= link_to("Add a job", new_job_path, class: "btn btn-default pull-right") %>
+    <!-- <li class="dropdown btn btn-default pull-right">
       <span class="dropdown-toggle" data-toggle="dropdown">
         排序
         <b class="caret"></b>
-      </span>
+      </span> -->
+
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
         <li><%= link_to("按照薪资下限排序", jobs_path(:order => "by_lower_bound")) %></li>
         <li><%= link_to("按照薪资上限排序", jobs_path(:order => "by_upper_bound")) %></li>
