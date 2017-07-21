@@ -12,6 +12,7 @@
     <tr>
       <th>job</th>
       <th>user</th>
+      <th>content</th>
       <th>Download Link</th>
       <th>Create_at</th>
       <th>&nbsp;</th>
@@ -22,6 +23,7 @@
       <tr>
         <td><%= resume.job.title %></td>
         <td><%= resume.user.email %></td>
+        <td><%= resume.content %></td>
         <td><%= link_to "查看简历", resume.attachment_url %></td>
         <td><%= resume.created_at %></td>
         <td><%#= button_to "Delete",  resume, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{resume.name}?" %></td>
